@@ -8,6 +8,16 @@
 // Recommended: use a while of for loop to solve the problem
 function findFactorial(n) {
     // Your code here
+    // multiply each number by previous result in loop
+    // start at num, reduce by 1 each loop
+    // the factorial of 0 is one
+    // return product
+    let product = 1;
+    while (n > 0) {
+        product = n * product;
+        n--;
+    }
+    return product;
 }
 
 module.exports = findFactorial;

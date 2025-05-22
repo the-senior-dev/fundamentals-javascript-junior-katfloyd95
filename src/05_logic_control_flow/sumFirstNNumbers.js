@@ -9,6 +9,13 @@
  **/
 function sumFirstNNumbers(n) {
     // Your code here
+    // sum of n, reducing by 1 each loop
+    let sum = 0;
+    while (n > 0) {
+        sum = sum + n;
+        n--;
+    }
+    return sum;
 }
 
 
